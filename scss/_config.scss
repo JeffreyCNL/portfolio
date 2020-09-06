@@ -1,4 +1,5 @@
-$primary-color: #444;
+// $primary-color: #444;
+$primary-color: #fff;
 // color for the last name
 $secondary-color: #0a8ec2;
 $show-home-image: true;
@@ -27,6 +28,15 @@ $backgroung-opacity: 0.9;
         background: rgba($primary-color, $backgroung-opacity);
       }
     }
+  }
+}
+
+// set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
   }
 }
 

@@ -44,6 +44,18 @@
       height: 150px;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "work"
+      "job1"
+      "job2"
+      "projects";
+
+    grid-template-columns: 1fr;
+  }
 }
 
 // smartphones
