@@ -1,6 +1,6 @@
 $primary-color: #444;
 // color for the last name
-$secondary-color: #00ffff;
+$secondary-color: #0a8ec2;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $backgroung-opacity: 0.9;
@@ -27,5 +27,28 @@ $backgroung-opacity: 0.9;
         background: rgba($primary-color, $backgroung-opacity);
       }
     }
+  }
+}
+
+// media query mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
