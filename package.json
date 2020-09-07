@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://jeffreycnl.github.io/portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "sass": "node-sass -w scss/ -o docs/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
   "author": "Jeffrey Lee",
