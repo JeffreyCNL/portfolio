@@ -203,12 +203,26 @@ main {
   .about-info .certificate {
     grid-area: certificate;
     font-size: 1.5rem; }
-  .about-info .job,
-  .about-info .education,
-  .about-info .certificates {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #0a8ec2 5px solid; }
+
+.job,
+.education,
+.certificates,
+.personal-project {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: #0a8ec2 5px solid; }
+
+.project-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "ds";
+  grid-template-columns: 1fr; }
+  .project-info .project-ds {
+    grid-area: ds;
+    font-size: 2rem; }
+  .project-info .project-storage {
+    grid-area: ds;
+    font-size: 2rem; }
 
 .project-img {
   max-width: 100%;
@@ -230,6 +244,11 @@ main {
       opacity: 0.5;
       border-color: #0a8ec2;
       transition: all 0.5s ease-out; }
+
+.center {
+  margin: 3px auto;
+  width: 400px;
+  align-items: center; }
 
 .boxes {
   display: flex;
@@ -307,7 +326,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/portrait.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
