@@ -138,13 +138,30 @@ main {
     grid-area: certificate;
     font-size: 1.5rem;
   }
+}
 
-  .job,
-  .education,
-  .certificates {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+.job,
+.education,
+.certificates,
+.personal-project {
+  background: lighten($primary-color, 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
+}
+.project-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "ds";
+  grid-template-columns: 1fr;
+
+  .project-ds {
+    grid-area: ds;
+    font-size: 2rem;
+  }
+
+  .project-storage {
+    grid-area: ds;
+    font-size: 2rem;
   }
 }
 
@@ -177,6 +194,11 @@ main {
   }
 }
 
+.center {
+  margin: 3px auto;
+  width: 400px;
+  align-items: center;
+}
 // contact page
 
 .boxes {

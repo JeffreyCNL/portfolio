@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Distributed System</title>
+    <br />
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> About Me </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link"> My work </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> How to reach me </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contact">
+      <h1 class="lg-heading">
+        Project <span class="text-secondary">Distributed System</span>
+      </h1>
+      <h2 class="sm-heading">
+        UW CSE452 course Project. The GitLab repo is private.
+      </h2>
+    </main>
+    <div class="project-info">
+      <div class="personal-project project-ds">
+        <ul>
+          <li>
+            Implemented remote procedure call
+            <span class="text-third"> (RPC) </span> interface supporting
+            key-value store for many clients to a server.
+          </li>
+          <li>
+            Designed a key-value
+            <span class="text-third">primary-backup</span> replication system
+            for continuation of operation through server failures.
+          </li>
+          <li>
+            Developed <span class="text-third">Paxos management</span> of the
+            key-value store, providing a majority of servers remain functional.
+          </li>
+          <li>
+            Integrated <span class="text-third">sharding</span> of the key-value
+            store across server groups with
+            <span class="text-third">dynamic load balancing</span>
+            .
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -6,7 +6,7 @@
   "homepage": "https://jeffreycnl.github.io/portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o docs/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d docs"
   },
   "author": "Jeffrey Lee",
   "license": "ISC",
