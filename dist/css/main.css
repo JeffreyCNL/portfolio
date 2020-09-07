@@ -116,16 +116,19 @@ body {
 
 h1,
 h2,
-h3 {
-  margin: 0;
+h3,
+h5 {
+  margin: 0 0 0 0;
   font-weight: 400; }
   h1.lg-heading,
   h2.lg-heading,
-  h3.lg-heading {
+  h3.lg-heading,
+  h5.lg-heading {
     font-size: 6rem; }
   h1.sm-heading,
   h2.sm-heading,
-  h3.sm-heading {
+  h3.sm-heading,
+  h5.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
@@ -141,6 +144,14 @@ header {
 
 .text-secondary {
   color: #0a8ec2; }
+
+.text-third {
+  color: #f3f699;
+  font-weight: bolder; }
+
+.hyperlink {
+  color: #70a0f2;
+  text-decoration: underline; }
 
 main {
   padding: 4rem;
@@ -160,7 +171,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio" "work work" "job1 job2";
+  grid-template-areas: "bioimage bio" "work work" "job1 job2" "edu edu" "edu1 edu2" "certificate certificate" "certificate-1 certificate-1";
   grid-template-columns: repeat(2, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -174,13 +185,39 @@ main {
     grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #0a8ec2 5px solid; }
+  .about-info .edu-1 {
+    grid-area: edu1; }
+  .about-info .edu-2 {
+    grid-area: edu2; }
+  .about-info .certificate-1 {
+    grid-area: certificate-1;
+    width: 50%;
+    height: 50%;
+    object-fit: cover; }
   .about-info .work {
     grid-area: work;
     font-size: 1.5rem; }
+  .about-info .edu {
+    grid-area: edu;
+    font-size: 1.5rem; }
+  .about-info .certificate {
+    grid-area: certificate;
+    font-size: 1.5rem; }
+  .about-info .job,
+  .about-info .education,
+  .about-info .certificates {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #0a8ec2 5px solid; }
+
+.project-img {
+  max-width: 100%;
+  display: block;
+  position: absolute;
+  max-height: 100px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%; }
 
 .projects {
   display: grid;

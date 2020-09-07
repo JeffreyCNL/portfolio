@@ -18,7 +18,8 @@ body {
 // Headings
 h1,
 h2,
-h3 {
+h3,
+h5 {
   margin: 0 0 0 0;
   font-weight: 400;
   &.lg-heading {
@@ -46,6 +47,16 @@ header {
 
 .text-secondary {
   color: $secondary-color;
+}
+
+.text-third {
+  color: $third-color;
+  font-weight: bolder;
+}
+
+.hyperlink {
+  color: #70a0f2;
+  text-decoration: underline;
 }
 
 main {
@@ -78,7 +89,11 @@ main {
   grid-template-areas:
     "bioimage bio"
     "work work"
-    "job1 job2";
+    "job1 job2"
+    "edu edu"
+    "edu1 edu2"
+    "certificate certificate"
+    "certificate-1 certificate-1";
   grid-template-columns: repeat(2, 1fr);
 
   .bio-image {
@@ -99,17 +114,49 @@ main {
   .job-2 {
     grid-area: job2;
   }
-
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+  .edu-1 {
+    grid-area: edu1;
   }
-
+  .edu-2 {
+    grid-area: edu2;
+  }
+  .certificate-1 {
+    grid-area: certificate-1;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
   .work {
     grid-area: work;
     font-size: 1.5rem;
   }
+  .edu {
+    grid-area: edu;
+    font-size: 1.5rem;
+  }
+  .certificate {
+    grid-area: certificate;
+    font-size: 1.5rem;
+  }
+
+  .job,
+  .education,
+  .certificates {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+}
+
+// image sizes
+.project-img {
+  max-width: 100%;
+  display: block;
+  position: absolute;
+  max-height: 100px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 
 // work/ projects
