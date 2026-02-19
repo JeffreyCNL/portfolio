@@ -5,7 +5,7 @@ export default function Contact() {
     <main className="min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Get in Touch
           </h1>
@@ -15,12 +15,12 @@ export default function Contact() {
         </div>
 
         {/* Contact Form */}
-        <div className="mb-12">
+        <div className="mb-12 animate-fade-in" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
           <ContactForm />
         </div>
 
         {/* Social Links Section */}
-        <div className="text-center">
+        <div className="text-center animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
             Connect with me
           </h2>
@@ -29,7 +29,7 @@ export default function Contact() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:scale-110 transition-all duration-200"
               aria-label="GitHub"
             >
               <svg
@@ -49,7 +49,7 @@ export default function Contact() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:scale-110 transition-all duration-200"
               aria-label="LinkedIn"
             >
               <svg
@@ -65,7 +65,7 @@ export default function Contact() {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:scale-110 transition-all duration-200"
               aria-label="Twitter"
             >
               <svg

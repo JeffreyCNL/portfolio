@@ -20,8 +20,14 @@ export default function Blog() {
         {/* Blog Posts Grid */}
         {posts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post) => (
-              <BlogCard key={post.id} post={post} />
+            {posts.map((post, index) => (
+              <div
+                key={post.id}
+                className="animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <BlogCard post={post} />
+              </div>
             ))}
           </div>
         ) : (

@@ -21,8 +21,14 @@ export default function Projects() {
         {/* Projects Grid */}
         {projects.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+            {projects.map((project, index) => (
+              <div
+                key={project.id}
+                className="animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <ProjectCard project={project} />
+              </div>
             ))}
           </div>
         ) : (

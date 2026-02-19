@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import blogData from '@/data/blog.json';
 import { BlogPost } from '@/components/BlogCard';
+import { getBlogPostContent } from '@/lib/markdown';
+import MarkdownContent from '@/components/MarkdownContent';
 
 interface BlogPostProps {
   params: {
@@ -17,6 +19,7 @@ export default function BlogPostPage({ params }: BlogPostProps) {
     notFound();
   }
 
+  const markdownContent = getBlogPostContent(params.slug);
   const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
@@ -29,10 +32,10 @@ export default function BlogPostPage({ params }: BlogPostProps) {
         {/* Back Link */}
         <Link
           href="/blog"
-          className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white mb-8 transition-colors"
+          className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white mb-8 transition-colors group"
         >
           <svg
-            className="w-5 h-5 mr-2"
+            className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -49,7 +52,7 @@ export default function BlogPostPage({ params }: BlogPostProps) {
 
         {/* Article Header */}
         <article>
-          <header className="mb-8">
+          <header className="mb-8 animate-fade-in-up">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               {post.title}
             </h1>
@@ -77,27 +80,21 @@ export default function BlogPostPage({ params }: BlogPostProps) {
           </header>
 
           {/* Article Content */}
-          <div className="prose prose-lg dark:prose-invert max-w-none">
-            <div className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              <p className="text-xl mb-6">{post.description}</p>
-              <p className="mb-4">
-                This is a placeholder for the blog post content. In a real
-                implementation, you would load the markdown content from a file
-                or CMS and render it here using a markdown parser like
-                react-markdown or next-mdx-remote.
-              </p>
-              <p className="mb-4">
-                The blog post metadata is loaded from the JSON file, and you can
-                extend this to support full markdown content by:
-              </p>
-              <ul className="list-disc list-inside mb-4 space-y-2">
-                <li>Creating markdown files in a content directory</li>
-                <li>Using a library like react-markdown to render the content</li>
-                <li>Adding syntax highlighting for code blocks</li>
-                <li>Implementing a table of contents for longer posts</li>
-              </ul>
+          {markdownContent ? (
+            <div className="mt-8 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+              <MarkdownContent content={markdownContent} />
             </div>
-          </div>
+          ) : (
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <div className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                <p className="text-xl mb-6">{post.description}</p>
+                <p className="mb-4">
+                  This blog post doesn't have markdown content yet. The markdown file
+                  should be located at <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm">content/blog/{params.slug}.md</code>
+                </p>
+              </div>
+            </div>
+          )}
         </article>
       </div>
     </main>

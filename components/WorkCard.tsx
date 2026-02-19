@@ -17,7 +17,7 @@ export default function WorkCard({ work }: WorkCardProps) {
       {/* Timeline dot */}
       <div className="absolute left-0 top-1 -translate-x-1/2 w-4 h-4 rounded-full bg-gray-400 dark:bg-gray-600 border-2 border-white dark:border-gray-900"></div>
 
-      <div className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+      <div className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white">
             {work.role}

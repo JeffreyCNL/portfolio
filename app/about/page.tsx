@@ -16,7 +16,7 @@ export default function About() {
     <main className="min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             About Me
           </h1>
@@ -26,7 +26,7 @@ export default function About() {
         </div>
 
         {/* Personal Introduction */}
-        <section className="mb-12">
+        <section className="mb-12 animate-fade-in" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Introduction
           </h2>
@@ -46,15 +46,16 @@ export default function About() {
         </section>
 
         {/* Skills */}
-        <section className="mb-12">
+        <section className="mb-12 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Skills & Technologies
           </h2>
           <div className="flex flex-wrap gap-3">
-            {skills.map((skill) => (
+            {skills.map((skill, index) => (
               <span
                 key={skill}
-                className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium"
+                className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium hover:scale-110 hover:shadow-md transition-all duration-200 animate-fade-in-up"
+                style={{ animationDelay: `${0.3 + index * 0.05}s`, animationFillMode: 'both' }}
               >
                 {skill}
               </span>
@@ -63,11 +64,11 @@ export default function About() {
         </section>
 
         {/* Education */}
-        <section className="mb-12">
+        <section className="mb-12 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Education
           </h2>
-          <div className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-6">
+          <div className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-6 hover:shadow-lg transition-shadow duration-300">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
               Bachelor's Degree in Computer Science
             </h3>
@@ -78,7 +79,7 @@ export default function About() {
         </section>
 
         {/* Personal Interests */}
-        <section>
+        <section className="animate-fade-in" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Personal Interests
           </h2>
