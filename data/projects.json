@@ -1,26 +1,44 @@
 [
   {
     "id": "1",
-    "title": "Sample Project 1",
-    "description": "A modern web application built with React and TypeScript. This project demonstrates best practices in frontend development and includes features like authentication, data visualization, and real-time updates.",
-    "technologies": ["React", "TypeScript", "Tailwind CSS"],
-    "githubUrl": "https://github.com/example/project1",
-    "liveUrl": "https://example.com/project1",
+    "title": "E-Commerce Platform",
+    "description": "A full-featured e-commerce platform with shopping cart, payment integration, and admin dashboard. Built with modern web technologies to provide a seamless shopping experience.",
+    "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "PostgreSQL"],
+    "githubUrl": "https://github.com/example/ecommerce-platform",
+    "liveUrl": "https://ecommerce.example.com",
     "image": "/images/project1.jpg"
   },
   {
     "id": "2",
-    "title": "Sample Project 2",
-    "description": "A full-stack application with a RESTful API backend and responsive frontend. Features include user management, file uploads, and comprehensive search functionality.",
-    "technologies": ["Next.js", "Node.js", "PostgreSQL"],
-    "githubUrl": "https://github.com/example/project2",
-    "liveUrl": "https://example.com/project2"
+    "title": "Task Management App",
+    "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Supports multiple projects and workspaces.",
+    "technologies": ["React", "Node.js", "MongoDB", "Socket.io", "Express"],
+    "githubUrl": "https://github.com/example/task-manager",
+    "liveUrl": "https://tasks.example.com"
   },
   {
     "id": "3",
-    "title": "Sample Project 3",
-    "description": "An open-source library for data processing and visualization. Built with performance in mind, supporting large datasets and real-time updates.",
-    "technologies": ["Python", "D3.js", "WebSocket"],
-    "githubUrl": "https://github.com/example/project3"
+    "title": "Weather Dashboard",
+    "description": "A beautiful weather dashboard that displays current conditions, forecasts, and weather maps. Features location-based weather data and customizable widgets.",
+    "technologies": ["Vue.js", "TypeScript", "Chart.js", "OpenWeather API"],
+    "githubUrl": "https://github.com/example/weather-dashboard",
+    "liveUrl": "https://weather.example.com",
+    "image": "/images/project3.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Social Media Analytics Tool",
+    "description": "An analytics platform for tracking social media performance across multiple platforms. Provides insights, reports, and data visualization for marketing teams.",
+    "technologies": ["Python", "Django", "D3.js", "PostgreSQL", "Redis"],
+    "githubUrl": "https://github.com/example/social-analytics",
+    "liveUrl": "https://analytics.example.com"
+  },
+  {
+    "id": "5",
+    "title": "Portfolio Website",
+    "description": "A modern, responsive portfolio website showcasing projects, work experience, and blog posts. Built with Next.js and Tailwind CSS for optimal performance.",
+    "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "githubUrl": "https://github.com/example/portfolio",
+    "liveUrl": "https://portfolio.example.com"
   }
 ]

@@ -1,29 +1,58 @@
 [
   {
     "id": "1",
-    "slug": "getting-started-with-nextjs",
-    "title": "Getting Started with Next.js 14",
-    "description": "Learn the fundamentals of Next.js 14 and how to build modern web applications with the App Router, Server Components, and more.",
+    "slug": "getting-started-with-nextjs-14",
+    "title": "Getting Started with Next.js 14: A Complete Guide",
+    "description": "Learn the fundamentals of Next.js 14 and discover how to build modern web applications with the App Router, Server Components, and the latest features. This comprehensive guide covers everything from setup to deployment.",
     "date": "2024-01-15",
     "author": "Jeffrey",
-    "tags": ["Next.js", "React", "Web Development"]
+    "tags": ["Next.js", "React", "Web Development", "Tutorial"],
+    "image": "/images/blog/nextjs-guide.jpg"
   },
   {
     "id": "2",
-    "slug": "typescript-best-practices",
-    "title": "TypeScript Best Practices for React",
-    "description": "Discover essential TypeScript patterns and practices that will help you write more maintainable and type-safe React applications.",
+    "slug": "typescript-best-practices-react",
+    "title": "TypeScript Best Practices for React Developers",
+    "description": "Discover essential TypeScript patterns and practices that will help you write more maintainable and type-safe React applications. Learn about advanced types, utility types, and common pitfalls to avoid.",
     "date": "2024-02-10",
     "author": "Jeffrey",
-    "tags": ["TypeScript", "React", "Best Practices"]
+    "tags": ["TypeScript", "React", "Best Practices", "Programming"],
+    "image": "/images/blog/typescript-react.jpg"
   },
   {
     "id": "3",
-    "slug": "building-responsive-designs",
+    "slug": "building-responsive-designs-tailwind",
     "title": "Building Responsive Designs with Tailwind CSS",
-    "description": "A comprehensive guide to creating beautiful, responsive layouts using Tailwind CSS utility classes and modern design principles.",
+    "description": "A comprehensive guide to creating beautiful, responsive layouts using Tailwind CSS utility classes and modern design principles. Includes practical examples and tips for mobile-first development.",
     "date": "2024-03-05",
     "author": "Jeffrey",
-    "tags": ["Tailwind CSS", "CSS", "Design"]
+    "tags": ["Tailwind CSS", "CSS", "Design", "Responsive Design"]
+  },
+  {
+    "id": "4",
+    "slug": "optimizing-react-performance",
+    "title": "Optimizing React Performance: Tips and Techniques",
+    "description": "Explore various techniques to improve the performance of your React applications. Learn about memoization, code splitting, lazy loading, and other optimization strategies that can significantly boost your app's speed.",
+    "date": "2024-04-20",
+    "author": "Jeffrey",
+    "tags": ["React", "Performance", "Optimization", "Web Development"]
+  },
+  {
+    "id": "5",
+    "slug": "modern-javascript-features",
+    "title": "Modern JavaScript Features Every Developer Should Know",
+    "description": "A deep dive into the latest JavaScript features including async/await, destructuring, template literals, and more. Understand how these features can make your code cleaner and more efficient.",
+    "date": "2024-05-12",
+    "author": "Jeffrey",
+    "tags": ["JavaScript", "ES6+", "Programming", "Web Development"]
+  },
+  {
+    "id": "6",
+    "slug": "api-design-best-practices",
+    "title": "RESTful API Design: Best Practices and Patterns",
+    "description": "Learn how to design clean, maintainable REST APIs that follow industry best practices. This guide covers endpoint design, error handling, versioning, and security considerations.",
+    "date": "2024-06-18",
+    "author": "Jeffrey",
+    "tags": ["API", "Backend", "Best Practices", "Web Development"]
   }
 ]

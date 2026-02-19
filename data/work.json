@@ -1,26 +1,34 @@
 [
   {
     "id": "1",
-    "company": "Tech Company Inc.",
-    "role": "Senior Software Engineer",
+    "company": "Tech Innovations Inc.",
+    "role": "Senior Full Stack Engineer",
     "duration": "Jan 2022 - Present",
-    "description": "Leading development of customer-facing web applications using React and Next.js.\n\n• Architected and implemented scalable frontend solutions serving 100K+ users\n• Mentored junior developers and established coding standards\n• Collaborated with cross-functional teams to deliver features on time",
-    "technologies": ["React", "Next.js", "TypeScript", "Node.js"]
+    "description": "Leading development of customer-facing web applications and internal tools using modern web technologies.\n\n• Architected and implemented scalable frontend solutions serving 100K+ daily active users\n• Mentored a team of 5 junior developers and established coding standards and best practices\n• Collaborated with cross-functional teams (design, product, QA) to deliver features on time\n• Reduced application load time by 50% through performance optimization and code splitting\n• Implemented CI/CD pipelines reducing deployment time from 2 hours to 15 minutes",
+    "technologies": ["React", "Next.js", "TypeScript", "Node.js", "AWS", "Docker"]
   },
   {
     "id": "2",
     "company": "StartupXYZ",
     "role": "Full Stack Developer",
     "duration": "Mar 2020 - Dec 2021",
-    "description": "Developed and maintained the company's main product from MVP to production.\n\n• Built RESTful APIs and database schemas\n• Implemented responsive UI components\n• Optimized application performance, reducing load time by 40%",
-    "technologies": ["React", "Node.js", "MongoDB", "AWS"]
+    "description": "Developed and maintained the company's main SaaS product from MVP to production, handling both frontend and backend development.\n\n• Built RESTful APIs and designed database schemas for scalable data storage\n• Implemented responsive UI components using React and modern CSS frameworks\n• Optimized application performance, reducing load time by 40% and improving user experience\n• Integrated third-party services including payment processing and email notifications\n• Participated in code reviews and contributed to technical decision-making",
+    "technologies": ["React", "Node.js", "MongoDB", "AWS", "Express", "Stripe"]
   },
   {
     "id": "3",
-    "company": "Digital Agency",
+    "company": "Digital Creative Agency",
     "role": "Frontend Developer",
     "duration": "Jun 2018 - Feb 2020",
-    "description": "Created interactive web experiences for various clients.\n\n• Developed custom WordPress themes and plugins\n• Implemented pixel-perfect designs with HTML/CSS/JavaScript\n• Collaborated with designers to ensure design consistency",
-    "technologies": ["JavaScript", "WordPress", "CSS", "PHP"]
+    "description": "Created interactive web experiences and custom solutions for various client projects.\n\n• Developed custom WordPress themes and plugins for client websites\n• Implemented pixel-perfect designs with HTML5, CSS3, and JavaScript\n• Collaborated closely with designers to ensure design consistency and brand guidelines\n• Built responsive layouts that work seamlessly across all devices and browsers\n• Maintained and updated existing client websites with new features and bug fixes",
+    "technologies": ["JavaScript", "WordPress", "CSS", "PHP", "jQuery", "Bootstrap"]
+  },
+  {
+    "id": "4",
+    "company": "Freelance Developer",
+    "role": "Web Developer",
+    "duration": "Jan 2017 - May 2018",
+    "description": "Worked independently on various web development projects for small businesses and startups.\n\n• Developed custom websites and web applications for clients\n• Provided technical consulting and recommendations for technology stack choices\n• Managed project timelines and client communications\n• Delivered projects on time and within budget",
+    "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
   }
 ]
