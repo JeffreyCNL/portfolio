@@ -1,8 +1,96 @@
 export default function About() {
+  const skills = [
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'Next.js',
+    'Node.js',
+    'Python',
+    'PostgreSQL',
+    'MongoDB',
+    'AWS',
+    'Tailwind CSS',
+  ];
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-        <h1 className="text-4xl font-bold">About</h1>
+    <main className="min-h-screen">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            About Me
+          </h1>
+          <p className="text-lg text-gray-600 dark:text-gray-400">
+            Get to know more about my background and interests
+          </p>
+        </div>
+
+        {/* Personal Introduction */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            Introduction
+          </h2>
+          <div className="prose prose-lg dark:prose-invert max-w-none">
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Hello! I'm a passionate software developer with a love for creating
+              innovative web applications. I enjoy solving complex problems and
+              turning ideas into reality through code.
+            </p>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              My journey in software development started with curiosity and has
+              evolved into a career focused on building user-friendly, scalable
+              applications. I'm always eager to learn new technologies and
+              improve my craft.
+            </p>
+          </div>
+        </section>
+
+        {/* Skills */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            Skills & Technologies
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {skills.map((skill) => (
+              <span
+                key={skill}
+                className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        {/* Education */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            Education
+          </h2>
+          <div className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              Bachelor's Degree in Computer Science
+            </h3>
+            <p className="text-gray-600 dark:text-gray-400">
+              Focused on software engineering, algorithms, and web development.
+            </p>
+          </div>
+        </section>
+
+        {/* Personal Interests */}
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            Personal Interests
+          </h2>
+          <div className="prose prose-lg dark:prose-invert max-w-none">
+            <p className="text-gray-600 dark:text-gray-400">
+              When I'm not coding, I enjoy exploring new technologies, contributing
+              to open-source projects, reading tech blogs, and staying up-to-date
+              with the latest trends in web development. I also love hiking,
+              photography, and spending time with friends and family.
+            </p>
+          </div>
+        </section>
       </div>
     </main>
   );

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "company": "Tech Company Inc.",
+    "role": "Senior Software Engineer",
+    "duration": "Jan 2022 - Present",
+    "description": "Leading development of customer-facing web applications using React and Next.js.\n\n• Architected and implemented scalable frontend solutions serving 100K+ users\n• Mentored junior developers and established coding standards\n• Collaborated with cross-functional teams to deliver features on time",
+    "technologies": ["React", "Next.js", "TypeScript", "Node.js"]
+  },
+  {
+    "id": "2",
+    "company": "StartupXYZ",
+    "role": "Full Stack Developer",
+    "duration": "Mar 2020 - Dec 2021",
+    "description": "Developed and maintained the company's main product from MVP to production.\n\n• Built RESTful APIs and database schemas\n• Implemented responsive UI components\n• Optimized application performance, reducing load time by 40%",
+    "technologies": ["React", "Node.js", "MongoDB", "AWS"]
+  },
+  {
+    "id": "3",
+    "company": "Digital Agency",
+    "role": "Frontend Developer",
+    "duration": "Jun 2018 - Feb 2020",
+    "description": "Created interactive web experiences for various clients.\n\n• Developed custom WordPress themes and plugins\n• Implemented pixel-perfect designs with HTML/CSS/JavaScript\n• Collaborated with designers to ensure design consistency",
+    "technologies": ["JavaScript", "WordPress", "CSS", "PHP"]
+  }
+]
