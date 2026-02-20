@@ -14,9 +14,10 @@ export default function MarkdownContent({ content }: MarkdownContentProps) {
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw, rehypeHighlight]}
         components={{
-          code({ node, inline, className, children, ...props }) {
+          code({ className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || '');
-            return !inline && match ? (
+            const isCodeBlock = !!match;
+            return isCodeBlock ? (
               <pre className="bg-gray-900 dark:bg-gray-800 rounded-lg p-4 overflow-x-auto">
                 <code className={className} {...props}>
                   {children}
