@@ -32,14 +32,14 @@ export default function About() {
           </h2>
           <div className="prose prose-lg dark:prose-invert max-w-none">
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Hello! I'm a passionate software developer with a love for creating
+              Hello! I&apos;m a passionate software developer with a love for creating
               innovative web applications. I enjoy solving complex problems and
               turning ideas into reality through code.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               My journey in software development started with curiosity and has
               evolved into a career focused on building user-friendly, scalable
-              applications. I'm always eager to learn new technologies and
+              applications. I&apos;m always eager to learn new technologies and
               improve my craft.
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function About() {
           </h2>
           <div className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-6 hover:shadow-lg transition-shadow duration-300">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-              Bachelor's Degree in Computer Science
+              Bachelor&apos;s Degree in Computer Science
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
               Focused on software engineering, algorithms, and web development.
@@ -85,7 +85,7 @@ export default function About() {
           </h2>
           <div className="prose prose-lg dark:prose-invert max-w-none">
             <p className="text-gray-600 dark:text-gray-400">
-              When I'm not coding, I enjoy exploring new technologies, contributing
+              When I&apos;m not coding, I enjoy exploring new technologies, contributing
               to open-source projects, reading tech blogs, and staying up-to-date
               with the latest trends in web development. I also love hiking,
               photography, and spending time with friends and family.

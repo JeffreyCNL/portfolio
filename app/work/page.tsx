@@ -13,7 +13,7 @@ export default function Work() {
             Work Experience
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            My professional journey and the roles I've held throughout my career.
+            My professional journey and the roles I&apos;ve held throughout my career.
           </p>
         </div>
 

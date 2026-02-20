@@ -89,7 +89,7 @@ export default function BlogPostPage({ params }: BlogPostProps) {
               <div className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p className="text-xl mb-6">{post.description}</p>
                 <p className="mb-4">
-                  This blog post doesn't have markdown content yet. The markdown file
+                  This blog post doesn&apos;t have markdown content yet. The markdown file
                   should be located at <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm">content/blog/{params.slug}.md</code>
                 </p>
               </div>
