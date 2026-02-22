@@ -7,10 +7,10 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
         <div className="text-center animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            Hi, I&apos;m <span className="text-gray-700 dark:text-gray-300">Jeffrey</span>
+            Hi, I&apos;m <span className="text-gray-700 dark:text-gray-300">Jeffrey Lee</span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto">
-            A software developer passionate about building modern web applications
+            An experienced software developer passionate about building software systems.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -36,8 +36,9 @@ export default function Home() {
             About Me
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            I&apos;m a full-stack developer with experience building scalable web applications.
-            I love working with modern technologies and creating user-friendly experiences.
+            I&apos;m a full-stack developer with experience building scalable system.
+            I&apos;m good at building system from scratch. 
+            With a great communication skill and product mindset, I can deliver result that fit the customers' need.
           </p>
         </div>
 
