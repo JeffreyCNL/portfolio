@@ -38,7 +38,7 @@ export default function Home() {
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             I&apos;m a full-stack developer with experience building scalable system.
             I&apos;m good at building system from scratch. 
-            With a great communication skill and product mindset, I can deliver result that fit the customers' need.
+            With a great communication skill and product mindset, I can deliver result that fit the customers&apos; need.
           </p>
         </div>
 
