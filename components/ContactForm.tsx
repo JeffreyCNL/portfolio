@@ -29,17 +29,21 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: '' });
 
-    // Simulate form submission (replace with actual API call)
     try {
-      // TODO: Replace with actual API endpoint
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error('Failed');
+
       setSubmitStatus({
         type: 'success',
-        message: 'Thank you for your message! I will get back to you soon.',
+        message: 'Message sent! I\'ll get back to you soon.',
       });
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
+    } catch {
       setSubmitStatus({
         type: 'error',
         message: 'Something went wrong. Please try again later.',
