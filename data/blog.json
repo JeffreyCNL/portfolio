@@ -4,7 +4,7 @@
     "slug": "fetch-s3-express-one-zone",
     "title": "How Fetch Reduces Latency on Image Uploads Using Amazon S3 Express One Zone",
     "description": "Published on the AWS Storage Blog — how we replaced Fetch's legacy image upload pipeline with S3 Express One Zone, cutting upload latency and improving throughput at scale.",
-    "date": "2024-03-01",
+    "date": "2024-06-24",
     "author": "Jeffrey Lee",
     "tags": ["AWS", "S3", "Go", "Backend", "Performance"],
     "externalUrl": "https://aws.amazon.com/blogs/storage/how-fetch-reduces-latency-on-image-uploads-using-amazon-s3-express-one-zone/"
