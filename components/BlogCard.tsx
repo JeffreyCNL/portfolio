@@ -10,6 +10,7 @@ export interface BlogPost {
   author?: string;
   image?: string;
   tags?: string[];
+  externalUrl?: string;
 }
 
 interface BlogCardProps {
@@ -23,9 +24,14 @@ export default function BlogCard({ post }: BlogCardProps) {
     day: 'numeric',
   });
 
+  const href = post.externalUrl ?? `/blog/${post.slug}`;
+  const isExternal = !!post.externalUrl;
+
   return (
     <Link
-      href={`/blog/${post.slug}`}
+      href={href}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
       className="group block overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
     >
       {/* Blog Image */}
@@ -76,7 +82,7 @@ export default function BlogCard({ post }: BlogCardProps) {
 
         {/* Read more indicator */}
         <div className="mt-4 flex items-center text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
-          Read more
+          {isExternal ? 'Read on AWS Blog' : 'Read more'}
           <svg
             className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform"
             fill="none"
@@ -88,7 +94,7 @@ export default function BlogCard({ post }: BlogCardProps) {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M9 5l7 7-7 7"
+              d={isExternal ? "M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" : "M9 5l7 7-7 7"}
             />
           </svg>
         </div>
