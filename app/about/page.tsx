@@ -17,7 +17,7 @@ export default function About() {
 
   return (
     <main className="min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -35,15 +35,15 @@ export default function About() {
           </h2>
           <div className="prose prose-lg dark:prose-invert max-w-none">
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Hello! I&apos;m a passionate software developer with a love for creating
-              innovative web applications. I enjoy solving complex problems and
-              turning ideas into reality through code.
+              I&apos;m a software engineer with a background that spans mechanical engineering,
+              Python automation, and backend systems at scale. My path into software was
+              driven by curiosity — and it stuck.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              My journey in software development started with curiosity.
-              The curiosity has drove me to self-taught myself all the way to become a professional developer and evolved into a career focused on building user-friendly, scalable
-              applications. I&apos;m always eager to learn new technologies and
-              improve my craft.
+              Most recently I spent four years at Fetch Rewards building backend services in Go
+              and Python that integrated OCR and LLM models to digitize receipt data — replacing
+              a legacy system and delivering over $6M in annual cost savings. I care about writing
+              software that ships, performs, and lasts.
             </p>
           </div>
         </section>

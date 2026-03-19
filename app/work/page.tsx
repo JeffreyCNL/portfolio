@@ -6,7 +6,7 @@ export default function Work() {
 
   return (
     <main className="min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
